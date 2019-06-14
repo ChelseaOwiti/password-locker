@@ -26,3 +26,6 @@ class Credentilas:
     self.accountname = accountname
     self.password = password
   
+  def save_account(self):
+    Credentilas.account_list.append(self)
+  
