@@ -24,6 +24,8 @@ class TestUser(unittest.TestCase):
     self.assertEqual(self.new_user.username, "Chelsea")
     self.assertEqual(self.new_user.password, "12345")
     
+    
+    
 class TestCredentials(unittest.TestCase):
   def setUp(self):
     """
