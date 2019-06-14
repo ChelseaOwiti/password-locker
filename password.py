@@ -13,4 +13,8 @@ class User:
     
     
     
-
+class Credentilas:
+  """
+  class containing account details
+  """
+  account_list = []
