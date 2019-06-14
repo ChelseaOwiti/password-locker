@@ -53,7 +53,9 @@ class TestCredentials(unittest.TestCase):
     
     self.new_account.delete_account()
     self.assertEqual(len(Credentilas.account_list),1)
-      
+  
+  def test_display_credentials(self):
+    self.assertEqual(Credentilas.display_account(),Credentilas.account_list)      
       
 if __name__ == '__main__':
   unittest.main()

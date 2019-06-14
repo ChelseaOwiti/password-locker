@@ -32,3 +32,6 @@ class Credentilas:
   def delete_account(self):
     Credentilas.account_list.remove(self)  
   
+  @classmethod
+  def display_account(cls):
+    return cls.account_list
