@@ -29,5 +29,6 @@ class Credentilas:
   def save_account(self):
     Credentilas.account_list.append(self)
     
-    
+  def delete_account(self):
+    Credentilas.account_list.remove(self)  
   
