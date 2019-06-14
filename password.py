@@ -27,11 +27,20 @@ class Credentilas:
     self.password = password
   
   def save_account(self):
+    """
+    save account credentials method
+    """
     Credentilas.account_list.append(self)
     
   def delete_account(self):
+    """
+    delete account credentials method
+    """
     Credentilas.account_list.remove(self)  
   
   @classmethod
   def display_account(cls):
+    """
+    display account credentials
+    """
     return cls.account_list

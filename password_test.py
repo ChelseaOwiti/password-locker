@@ -12,20 +12,35 @@ class TestUser(unittest.TestCase):
     """
     self.new_user = User("Chelsea", "12345")
   def tearDown(self):
+    """
+    tearDown method that does clean up after each case has run.
+    """
     User.user_list = []
     
   def test_init(self):
+    """
+    test_init test case to test if the object is initialized properly 
+    """
     self.assertEqual(self.new_user.username, "Chelsea")
     self.assertEqual(self.new_user.password, "12345")
     
 class TestCredentials(unittest.TestCase):
   def setUp(self):
+    """
+    method to run before each test
+    """
     self.new_account = Credentilas("Flab","flab123","1234")
     
   def tearDown(self):
+    """
+    tearDown method that does clean up after each case has run.
+    """
     Credentilas.account_list = []
     
   def test_init(self):
+    """
+    test_init test case to test if the object is initialized properly 
+    """
     self.assertEqual(self.new_account.sitename, "Flab")
     self.assertEqual(self.new_account.accountname, "flab123")
     self.assertEqual(self.new_account.password, "1234")
@@ -47,6 +62,9 @@ class TestCredentials(unittest.TestCase):
     self.assertEqual(len(Credentilas.account_list),2)
     
   def test_delete_account(self):
+    """
+    deleting account details
+    """
     self.new_account.save_account()
     test_account = Credentilas("Flab", "flab123", "1234")
     test_account.save_account()
@@ -55,6 +73,9 @@ class TestCredentials(unittest.TestCase):
     self.assertEqual(len(Credentilas.account_list),1)
   
   def test_display_credentials(self):
+    """
+    displaying credentials
+    """
     self.assertEqual(Credentilas.display_account(),Credentilas.account_list)      
       
 if __name__ == '__main__':
