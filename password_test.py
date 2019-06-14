@@ -31,8 +31,20 @@ class TestCredentials(unittest.TestCase):
     self.assertEqual(self.new_account.password, "1234")
     
   def test_save_account(self):
+    """
+    saving account details
+    """
     self.new_account.save_account()
     self.assertEqual(len(Credentilas.account_list), 1)
+    
+  def test_save_many_accounts(self):
+    """
+    saving multiple accounts
+    """
+    self.new_account.save_account()
+    test_account = Credentilas("Flab", "flab123", "1234") 
+    test_account.save_account()
+    self.assertEqual(len(Credentilas.account_list),2)
       
       
 if __name__ == '__main__':
