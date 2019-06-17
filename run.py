@@ -50,6 +50,26 @@ def main():
   print("CREATE A PASSWORD LOCKER ACCOUNT FIRST!!")
   print("--------------------------- ")
   print("--------------------------- ")
+  print("What is your name?")
   
+  user_name = input()
+  print("--------------------------- ")
+  print("--------------------------- ")
   
+  print(f"Hey {user_name}. Would you like to create an account?")
+  print("\n")
+  
+  while True:
+    print("Use these codes to make requests:")
+    print("us- add user account")
+    print("ca- create an account")
+    print("da - delete and account")
+    print("va- view account details")
+    
+    short_code = input().lower()
+    
+    if short_code == "us":
+    print("USER ACCOUNT")
+        
+   
   
