@@ -110,6 +110,9 @@ def main():
         print(f"{sitetname}, {accountname}, {password}")
       else: print("No accounts available")
       
+    elif short_code == "da":
+      delete_accounts(save_account)
+      
         
    
   
