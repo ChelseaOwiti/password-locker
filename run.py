@@ -15,7 +15,17 @@ def save_user(user):
   save created user
   """
   user.save_user()
-
+def create_account(sitename, accountname, password):
+  """
+  creating account details
+  """
+  new_account = Credentilas(sitename, accountname, password):
+  return new_account
+def save_account(account):
+  """
+  saving account details
+  """
+  account.save_account()
   
   
 
