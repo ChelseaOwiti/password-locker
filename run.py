@@ -104,7 +104,11 @@ def main():
       password = input()
       
       save_account(create_account(sitename, accountname, password))
-  
+    elif short_code == "va":
+      if display_account_details():
+        for account in display_account_details():
+        print(f"{sitetname}, {accountname}, {password}")
+      else: print("No accounts available")
       
         
    
