@@ -26,6 +26,11 @@ def save_account(account):
   saving account details
   """
   account.save_account()
+def delete_accounts(account):
+  """
+  deleting account details
+  """
+  account.delete_accounts()
   
   
 
