@@ -4,12 +4,12 @@ from password import User
 from password import Credentilas
 from random import randint #enables use of randit method to import random string
 
-def new_user(username, password):
+def new_user(username, passwords):
   """
   creates a new user
   """
-  
-  return User(username, password)
+  new_user = User(username, passwords)
+  return new_user
 def save_user(user):
   """
   save created user
@@ -70,6 +70,15 @@ def main():
     
     if short_code == "us":
     print("USER ACCOUNT")
+    print ("Enter username")
+    username = input()
+    
+    print ("Enter NEW USER password")
+    passwords = input()
+    
+    save_user(new_user(username, passwords))
+    
+    print("User account {username} created")
         
    
   
