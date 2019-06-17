@@ -1,4 +1,4 @@
-#1/usr/bin/env python3.6
+#!/usr/bin/env python3.6
 
 from password import User
 from password import Credentilas
@@ -19,7 +19,7 @@ def create_account(sitename, accountname, password):
   """
   creating account details
   """
-  new_account = Credentilas(sitename, accountname, password):
+  new_account = Credentilas(sitename, accountname, password)
   return new_account
 def save_account(password):
   """
@@ -30,7 +30,7 @@ def delete_accounts(password):
   """
   deleting account details
   """
-  password.delete_accounts()
+  password.delete_account()
 def display_account_details():
   """
   displays saved account details
@@ -41,7 +41,7 @@ def display_account_details():
 def main():
   """
   main functions called here
-  """"
+  """
   print("--------------------------- ")
   print("--------------------------- ")
   print("--PASSWORD LOCCKER APP :)--")
@@ -70,7 +70,7 @@ def main():
     
     if short_code == "us":
       print("USER ACCOUNT")
-      print ("Enter username")
+      print ("Enter USERNAME")
       username = input()
       
       print ("Enter NEW USER password")
@@ -78,18 +78,29 @@ def main():
       
       save_user(new_user(username, passwords))
       
-      print("User account {username} created")
+      print("User account {username} successfully created")
+      print("--------------------------- ")
+      print("--------------------------- ")
       
       print("The next step is to save specific account details")
-      
-      print ("Enter site name")
+      print("ACCOUNT DETAILS")
+      print ("Enter SITE name")
       sitename = input()
       
-      print ("Enter account name:")
+      print("--------------------------- ")
+      print("--------------------------- ")
+      
+      print ("Enter ACCOUNT name:")
       accountname = input()
       
-      print("Enter password")
+      print("--------------------------- ")
+      print("--------------------------- ")
+      
+      print("Enter PASSWORD")
       password = input()
+    
+      print("--------------------------- ")
+      print("--------------------------- ")
       
       save_account(create_account(sitename, accountname, password))
       
@@ -107,14 +118,14 @@ def main():
     elif short_code == "va":
       if display_account_details():
         for account in display_account_details():
-        print(f"{sitetname}, {accountname}, {password}")
+          print(f"{sitename}, {accountname}, {password}")
       else: print("No accounts available")
       
     elif short_code == "da":
       delete_accounts(save_account)
       
 if __name__ == "__main__":
-main()
+  main()
       
         
    

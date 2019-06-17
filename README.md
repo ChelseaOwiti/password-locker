@@ -16,7 +16,7 @@ Python 3.6
 
 * Run the following command to make the app executable: $ chmod +x run.py
 
-*Run this command to open the app: $ ./run.py
+* Run this command to open the app: $ ./run.py
 
 ## BDD
 * The user is able to create a password locker account with a login username and password.
