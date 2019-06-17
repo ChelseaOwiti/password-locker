@@ -113,6 +113,9 @@ def main():
     elif short_code == "da":
       delete_accounts(save_account)
       
+if __name__ == "__main__":
+main()
+      
         
    
   
