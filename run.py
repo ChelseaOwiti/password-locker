@@ -31,6 +31,11 @@ def delete_accounts(account):
   deleting account details
   """
   account.delete_accounts()
+def display_account_details():
+  """
+  displays saved account details
+  """
+  return Credentilas.display_account()
   
   
 
