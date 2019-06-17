@@ -69,16 +69,43 @@ def main():
     short_code = input().lower()
     
     if short_code == "us":
-    print("USER ACCOUNT")
-    print ("Enter username")
-    username = input()
-    
-    print ("Enter NEW USER password")
-    passwords = input()
-    
-    save_user(new_user(username, passwords))
-    
-    print("User account {username} created")
+      print("USER ACCOUNT")
+      print ("Enter username")
+      username = input()
+      
+      print ("Enter NEW USER password")
+      passwords = input()
+      
+      save_user(new_user(username, passwords))
+      
+      print("User account {username} created")
+      
+      print("The next step is to save specific account details")
+      
+      print ("Enter site name")
+      sitename = input()
+      
+      print ("Enter account name:")
+      accountname = input()
+      
+      print("Enter password")
+      password = input()
+      
+      save_account(create_account(sitename, accountname, password))
+      
+    elif short_code == "ca":
+      print ("Enter site name")
+      sitename = input()
+      
+      print ("Enter account name:")
+      accountname = input()
+      
+      print("Enter password")
+      password = input()
+      
+      save_account(create_account(sitename, accountname, password))
+  
+      
         
    
   
