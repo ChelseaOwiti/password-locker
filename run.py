@@ -8,8 +8,8 @@ def new_user(username, password):
   """
   creates a new user
   """
-  new_user = User(username, password)
-  return new_user(password)
+  
+  return User(username, password)
 def save_user(user):
   """
   save created user
@@ -21,16 +21,16 @@ def create_account(sitename, accountname, password):
   """
   new_account = Credentilas(sitename, accountname, password):
   return new_account
-def save_account(account):
+def save_account(password):
   """
   saving account details
   """
-  account.save_account()
-def delete_accounts(account):
+  password.save_account()
+def delete_accounts(password):
   """
   deleting account details
   """
-  account.delete_accounts()
+  password.delete_accounts()
 def display_account_details():
   """
   displays saved account details
@@ -38,5 +38,18 @@ def display_account_details():
   return Credentilas.display_account()
   
   
-
+def main():
+  """
+  main functions called here
+  """"
+  print("--------------------------- ")
+  print("--------------------------- ")
+  print("--PASSWORD LOCCKER APP :)--")
+  
+  print(":) :) :) :) :) :)")
+  print("CREATE A PASSWORD LOCKER ACCOUNT FIRST!!")
+  print("--------------------------- ")
+  print("--------------------------- ")
+  
+  
   
