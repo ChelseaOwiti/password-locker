@@ -10,7 +10,11 @@ class User:
     self.username = username
     self.password = password
     
-    
+  def save_user(self):
+    """
+    save user details method
+    """
+    User.user_list.append(self) 
     
     
 class Credentilas:
